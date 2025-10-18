@@ -1,0 +1,104 @@
+/* الخلفية العامة */
+body {
+  background: linear-gradient(45deg, #ff6a00, #ffcc00); /* تدرج لوني جميل */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* تنسيق الحاوية الرئيسية (الكارد) */
+.login-container {
+  background-color: white;
+  padding: 40px 50px;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-sizing: border-box;
+  animation: fadeIn 1s ease-out;
+}
+
+/* تأثير الظهور */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* العنوان */
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* تنسيق الحقول */
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+/* تأثير التفاعل مع الحقول */
+input[type="text"]:focus, input[type="password"]:focus {
+  border-color: #ff6a00;
+  box-shadow: 0 0 8px rgba(255, 106, 0, 0.6);
+  outline: none;
+}
+
+/* زر تسجيل الدخول */
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: #ff6a00;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* تأثير التفاعل مع الزر */
+button:hover {
+  background-color: #ff4d00;
+}
+
+/* تنسيق الرسائل */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+a {
+  color: #ff6a00;
+  font-size: 16px;
+  text-decoration: none;
+  margin-top: 20px;
+  display: block;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* التفاعل مع الحواف المنحنية */
+input, button {
+  border-radius: 10px;
+}
