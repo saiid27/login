@@ -54,6 +54,7 @@ const Login = () => {
 
   return (
     <div className="login-container">
+      <h3> temeyouzi</h3>
       <h2>صفحة تسجيل الدخول</h2>
       <div>
         <input
@@ -75,7 +76,7 @@ const Login = () => {
       {error && <p className="error">{error}</p>}
       {link && (
         <div>
-          <p>تم التحقق بنجاح، سيتم فتح الرابط في نفس النافذة...</p>
+          <p>تم التحقق بنجاح، مرحبا بكم في منصة تميزي العليمية     ...</p>
         </div>
       )}
     </div>
