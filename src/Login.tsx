@@ -79,7 +79,11 @@ const Login = () => {
           <p>تم التحقق بنجاح، مرحبا بكم في منصة تميزي العليمية     ...</p>
         </div>
       )}
+
+
+      <div><p><a href="https://api.whatsapp.com/send/?phone=%2B22234605765&text&type=phone_number&app_absent=0">نسيت كلمة المرور</a></p></div>
     </div>
+
   );
 };
 
