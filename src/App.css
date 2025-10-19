@@ -1,6 +1,6 @@
 /* الخلفية العامة */
 body {
-  background: linear-gradient(45deg, #ff6a00, #ffcc00); /* تدرج لوني جميل */
+  background: linear-gradient(45deg, hsl(204, 89%, 64%), #75a7c4); /* تدرج لوني جميل */
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
