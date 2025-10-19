@@ -54,6 +54,13 @@ const Login = () => {
 
   return (
     <div className="login-container">
+      {/* إضافة الصورة داخل الكونتينر */}
+     <img
+        src="vite.jpg"
+        alt="Login Banner"
+        className="login-banner"
+        style={{ width: "90px", height: "90" }} // تحديد الحجم
+      />
       <h3> temeyouzi - منصة</h3>
       <h2> تسجيل الدخول</h2>
       <div>
@@ -79,11 +86,14 @@ const Login = () => {
           <p>تم التحقق بنجاح، مرحبا بكم في منصة تميزي العليمية     ...</p>
         </div>
       )}
-
-
-      <div><p><a href="https://api.whatsapp.com/send/?phone=%2B22249677414&text&type=phone_number&app_absent=0">نسيت كلمة المرور</a></p></div>
+      <div>
+        <p>
+          <a href="https://api.whatsapp.com/send/?phone=%2B22249677414&text&type=phone_number&app_absent=0">
+            نسيت كلمة المرور
+          </a>
+        </p>
+      </div>
     </div>
-
   );
 };
 
