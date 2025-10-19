@@ -59,7 +59,7 @@ const Login = () => {
         src="vite.jpg"
         alt="Login Banner"
         className="login-banner"
-        style={{ width: "90px", height: "90" }} // تحديد الحجم
+        style={{ width: "100px", height: "100" }} // تحديد الحجم
       />
       <h3> temeyouzi - منصة</h3>
       <h2> تسجيل الدخول</h2>
