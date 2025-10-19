@@ -40,7 +40,14 @@ h2 {
   font-size: 32px;
   font-weight: 600;
   margin-bottom: 20px;
-  color: #333;
+  color: #39b0d4;
+}
+/* العنوان */
+h3 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #7dc8eb;
 }
 
 /* تنسيق الحقول */

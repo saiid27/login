@@ -54,12 +54,12 @@ const Login = () => {
 
   return (
     <div className="login-container">
-      <h3> temeyouzi</h3>
-      <h2>صفحة تسجيل الدخول</h2>
+      <h3> temeyouzi - منصة</h3>
+      <h2> تسجيل الدخول</h2>
       <div>
         <input
           type="text"
-          placeholder="الاسم"
+          placeholder="اسم المستخدم"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
@@ -67,7 +67,7 @@ const Login = () => {
       <div>
         <input
           type="password"
-          placeholder="الكود"
+          placeholder="كلمة المرور"
           value={code}
           onChange={(e) => setCode(e.target.value)}
         />
