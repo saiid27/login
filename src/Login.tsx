@@ -14,7 +14,8 @@ const Login = () => {
   const [sheetData, setSheetData] = useState<UserData[]>([]);
 
   // استبدل هذا الرابط بالرابط الذي حصلت عليه بعد نشر الورقة كـ CSV
-  const sheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRIPcoIiuwIfDEN2yqbjNz_JccoMemFH4OJphiVLPKrub6qYkXTbLl9klmYZyPHYJjkWw576iz1keZV/pub?gid=47240984&single=true&output=csv';
+  const sheetUrl =
+    "https://docs.google.com/spreadsheets/d/e/2PACX-1vRIPcoIiuwIfDEN2yqbjNz_JccoMemFH4OJphiVLPKrub6qYkXTbLl9klmYZyPHYJjkWw576iz1keZV/pub?gid=47240984&single=true&output=csv";
 
   useEffect(() => {
     fetch(sheetUrl)
@@ -43,8 +44,8 @@ const Login = () => {
       setLink(user.link); // تحديد الرابط
       setError(""); // إزالة الخطأ
 
-      // فتح الرابط بشكل تلقائي بعد التحقق
-      window.open(user.link, "_blank");
+      // فتح الرابط في نفس النافذة بعد التحقق
+      window.location.href = user.link;
     } else {
       setError("الاسم أو الكود غير صحيح");
       setLink(""); // إعادة تعيين الرابط في حال الخطأ
@@ -74,7 +75,7 @@ const Login = () => {
       {error && <p className="error">{error}</p>}
       {link && (
         <div>
-          <p>تم التحقق بنجاح، سيتم فتح الرابط في نافذة جديدة...</p>
+          <p>تم التحقق بنجاح، سيتم فتح الرابط في نفس النافذة...</p>
         </div>
       )}
     </div>
